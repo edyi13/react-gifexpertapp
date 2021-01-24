@@ -3,18 +3,11 @@ import { useFetchGifs } from '../hooks/useFetchGifs';
 // import React, { useState, useEffect } from 'react'
 // import { getGifs } from '../helpers/getGifs';
 import { GifGridItem } from './GifGridItem';
+import PropTypes from 'prop-types'
 
 export const GifGrid = ( {category} ) => {
 
-    // const [count, setCount] = useState(0);
-    // const [images, setImages] = useState([])
     const { data:images, loading} = useFetchGifs(category);
-    // useEffect(() => {
-    //     //se usa de esta forma por ser una promesa
-    //     getGifs(category).then(imgs => setImages(imgs));
-    // },[ category ]) // se envia si la categoria cambia para ejecutar el efecto
-
-    
     
     return (
         <>
@@ -36,4 +29,8 @@ export const GifGrid = ( {category} ) => {
         </>
         
     )
+}
+
+GifGrid.propTypes = {
+    category: PropTypes.string.isRequired
 }

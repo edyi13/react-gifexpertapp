@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en el <GifGridItem/> Deberia de mostrar <GifGridItem/> correctamente 1`] = `
+<div
+  className="card animate__animated animate__bounce animate__fadeIn"
+>
+  <img
+    alt="Dragon Ball Z GIF"
+    src="http://gph.is/2cLjMwm"
+  />
+  <p>
+    Dragon Ball Z GIF
+  </p>
+</div>
+`;
